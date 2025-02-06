@@ -1,0 +1,7 @@
+{
+    "recipient_email": "your-email@example.com",
+    "gmail_search_filter": "has:attachment label:RUA filename:(.zip OR .gz)",
+    "csv_output_path": "parsed_rua_results.csv",
+    "alert_email_subject": "Alert: DKIM or SPF Failures Detected",
+    "alert_email_body": "Please find the attached report for DKIM/SPF failures."
+}
