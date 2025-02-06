@@ -9,7 +9,7 @@ This guide is written to ensure compatibility with **macOS**, **Linux**, and **W
 ## Features
 
 - **Multi-Platform Compatibility**: Works seamlessly on macOS, Linux, and Windows.
-- **Automated Gmail Integration**: Fetch DMARC reports from Gmail with search filters and labels.
+- **Automated Gmail Integration**: Fetch then delete DMARC reports from Gmail with search filters and labels.
 - **Report Parsing**: Process `.zip` and `.gz` files containing XML DMARC reports, and export parsed data as CSV.
 - **Failure Analysis**: Detect DKIM and SPF failures in incoming reports and generate alerts based on detected issues.
 - **Email Alerts**: Automatically email alerts with attached reports if failures occur.
@@ -24,8 +24,8 @@ This guide is written to ensure compatibility with **macOS**, **Linux**, and **W
    - Windows: Download Python from [this link](https://www.python.org/downloads/) and ensure **Add Python to PATH** is checked during installation.
 
 ### 2. **Gmail API Setup**
-   - Enable the Gmail API and download your `credentials.json` file by following [this guide](https://developers.google.com/gmail/api/quickstart/python).
-   - Place the `credentials.json` file in the root directory of the project.
+   - Enable the Gmail API and download your `oauth.json` file by following [this guide](https://developers.google.com/gmail/api/quickstart/python).
+   - Place the `oauth.json` file in the root directory of the project.
 
 ### 3. **Install Required Python Libraries**
    - Install dependencies using `pip` after cloning the repository. Instructions are provided further below.
@@ -52,7 +52,7 @@ Follow these steps to ensure proper installation on your platform of choice:
 
 2. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/DMARC-Report-Processor.git
+   git clone https://github.com/NotARobott/RUAReportAnalyzer.git
    cd DMARC-Report-Processor
    ```
 
@@ -61,8 +61,8 @@ Follow these steps to ensure proper installation on your platform of choice:
    pip3 install -r requirements.txt
    ```
 
-4. **Place `credentials.json` in the Project Directory**:
-   After enabling the Gmail API, download `credentials.json` and move it into the root directory of the project.
+4. **Place `oauth.json` in the Project Directory**:
+   After enabling the Gmail API, download `oauth.json` and move it into the root directory of the project.
 
 5. **Configure the Script**:
    Edit `config.json` to personalize settings (e.g., recipient email, output path).
@@ -94,7 +94,7 @@ Follow these steps to ensure proper installation on your platform of choice:
 
 2. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/DMARC-Report-Processor.git
+   git clone https://github.com/NotARobott/RUAReportAnalyzer.git
    cd DMARC-Report-Processor
    ```
 
@@ -103,7 +103,7 @@ Follow these steps to ensure proper installation on your platform of choice:
    pip3 install -r requirements.txt
    ```
 
-4. **Place `credentials.json` in the Project Directory**.
+4. **Place `oauth.json` in the Project Directory**.
 
 5. **Run the Script**:
    ```bash
@@ -128,7 +128,7 @@ Follow these steps to ensure proper installation on your platform of choice:
    pip install -r requirements.txt
    ```
 
-4. **Place `credentials.json` in the Project Directory**.
+4. **Place `oauth.json` in the Project Directory**.
 
 5. **Run the Script**:
    ```cmd
