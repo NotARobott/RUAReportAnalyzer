@@ -248,4 +248,4 @@ DMARC-Report-Processor/
 
 ## Conclusion
 
-This project simplifies the process of monitoring DMARC reports, keeping email systems secure while saving time. Compatible across macOS, Linux, and Windows, it offers an efficient, automated workflow for managing DKIM/SPF issues. Feedback and contributions are welcome!
+This project simplifies the process of monitoring DMARC reports, keeping email systems secure while saving time. Compatible across macOS, Linux, and Windows, it offers an efficient, automated workflow for managing DKIM/SPF issues.
